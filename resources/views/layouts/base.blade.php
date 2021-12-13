@@ -54,20 +54,25 @@
                                 </li>
                                 <li class="menu-item lang-menu menu-item-has-children parent">
                                     <a title="English" href="#"><span class="img label-before"><img
-                                                src="{{ asset('assets/images/lang-en.png') }}" alt="lang-en"></span>English<i
-                                            class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                src="{{ asset('assets/images/lang-en.png') }}"
+                                                alt="lang-en"></span>English<i class="fa fa-angle-down"
+                                            aria-hidden="true"></i></a>
                                     <ul class="submenu lang">
                                         <li class="menu-item"><a title="hungary" href="#"><span
-                                                    class="img label-before"><img src="{{ asset('assets/images/lang-hun.png') }}"
+                                                    class="img label-before"><img
+                                                        src="{{ asset('assets/images/lang-hun.png') }}"
                                                         alt="lang-hun"></span>Hungary</a></li>
                                         <li class="menu-item"><a title="german" href="#"><span
-                                                    class="img label-before"><img src="{{ asset('assets/images/lang-ger.png') }}"
+                                                    class="img label-before"><img
+                                                        src="{{ asset('assets/images/lang-ger.png') }}"
                                                         alt="lang-ger"></span>German</a></li>
                                         <li class="menu-item"><a title="french" href="#"><span
-                                                    class="img label-before"><img src="{{ asset('assets/images/lang-fra.png') }}"
+                                                    class="img label-before"><img
+                                                        src="{{ asset('assets/images/lang-fra.png') }}"
                                                         alt="lang-fre"></span>French</a></li>
                                         <li class="menu-item"><a title="canada" href="#"><span
-                                                    class="img label-before"><img src="{{ asset('assets/images/lang-can.png') }}"
+                                                    class="img label-before"><img
+                                                        src="{{ asset('assets/images/lang-can.png') }}"
                                                         alt="lang-can"></span>Canada</a></li>
                                     </ul>
                                 </li>
@@ -95,8 +100,8 @@
                     <div class="mid-section main-info-area">
 
                         <div class="wrap-logo-top left-section">
-                            <a href="index.html" class="link-to-home"><img src="{{ asset('assets/images/logo-top-1.png') }}"
-                                    alt="mercado"></a>
+                            <a href="index.html" class="link-to-home"><img
+                                    src="{{ asset('assets/images/logo-top-1.png') }}" alt="mercado"></a>
                         </div>
 
                         <div class="wrap-search center-section">
@@ -185,20 +190,20 @@
                         <div class="container">
                             <ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu">
                                 <li class="menu-item home-icon">
-                                    <a href="index.html" class="link-term mercado-item-title"><i class="fa fa-home"
+                                    <a href="/" class="link-term mercado-item-title"><i class="fa fa-home"
                                             aria-hidden="true"></i></a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="about-us.html" class="link-term mercado-item-title">About Us</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="shop.html" class="link-term mercado-item-title">Shop</a>
+                                    <a href="/shop" class="link-term mercado-item-title">Shop</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="cart.html" class="link-term mercado-item-title">Cart</a>
+                                    <a href="/cart" class="link-term mercado-item-title">Cart</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="checkout.html" class="link-term mercado-item-title">Checkout</a>
+                                    <a href="/checkout" class="link-term mercado-item-title">Checkout</a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="contact-us.html" class="link-term mercado-item-title">Contact Us</a>
@@ -392,12 +397,14 @@
                                     <div class="wrap-list-item apps-list">
                                         <ul>
                                             <li><a href="#" class="link-to-item" title="our application on apple store">
-                                                    <figure><img src="{{ asset('assets/images/brands/apple-store.png') }}"
+                                                    <figure><img
+                                                            src="{{ asset('assets/images/brands/apple-store.png') }}"
                                                             alt="apple store" width="128" height="36"></figure>
                                                 </a></li>
                                             <li><a href="#" class="link-to-item"
                                                     title="our application on google play store">
-                                                    <figure><img src="{{ asset('assets/images/brands/google-play-store.png') }}"
+                                                    <figure><img
+                                                            src="{{ asset('assets/images/brands/google-play-store.png') }}"
                                                             alt="google play store" width="128" height="36"></figure>
                                                 </a></li>
                                         </ul>

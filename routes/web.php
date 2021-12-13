@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Livewire\HomeComponet;
+use App\Http\Livewire\CartComponent;
+use App\Http\Livewire\CheckoutComponent;
+use App\Http\Livewire\ShopComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,12 +17,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
 Route::get('/', HomeComponet::class);
+Route::get('/shop', ShopComponent::class);
+Route::get('/cart', CartComponent::class);
+Route::get('/checkout', CheckoutComponent::class);
