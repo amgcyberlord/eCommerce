@@ -49,9 +49,6 @@
                         </div>
                         <div class="topbar-menu right-menu">
                             <ul>
-                                <li class="menu-item"><a title="Register or Login" href="login.html">Login</a></li>
-                                <li class="menu-item"><a title="Register or Login" href="register.html">Register</a>
-                                </li>
                                 <li class="menu-item lang-menu menu-item-has-children parent">
                                     <a title="English" href="#"><span class="img label-before"><img
                                                 src="{{ asset('assets/images/lang-en.png') }}"
@@ -94,31 +91,34 @@
                             </ul>
 
                             @if (Route::has('login'))
-                                @auth
-                                    @if (Auth::user()->utype === "ADM")
-                                       <li class="menu-item menu-item-has-children parent">
-                                            <a title="My Account" href="">My Account({{ Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                            <ul class="submenu curency">
-                                                <li class="menu-item">
-                                                    <a title="Dashboard" href="#">Dashboard</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    @endif
-                                    <li class="menu-item menu-item-has-children parent">
-                                        <a title="My Account" href="">My Account({{ Auth::user()->name}})<i class="fa fa-angle-down"
-                                                aria-hidden="true"></i></a>
-                                        <ul class="submenu curency">
-                                            <li class="menu-item">
-                                                <a title="Dashboard" href="#">Dashboard</a>
-                                            </li>
-                                        </ul>
+                            @auth
+                            @if (Auth::user()->utype === "ADM")
+                            <li class="menu-item menu-item-has-children parent">
+                                <a title="My Account" href="">My Account({{ Auth::user()->name}})<i
+                                        class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="submenu curency">
+                                    <li class="menu-item">
+                                        <a title="Dashboard" href="#">Dashboard</a>
                                     </li>
-                                    @else
-                                    <li class="menu-item"><a title="Register or Login" href="{{ route('login.html') }}">Login</a></li>
-                                    <li class="menu-item"><a title="Register or Login" href="{{ route('register.html') }}">Register</a>
-                                @endauth
+                                </ul>
+                            </li>
                             @endif
+                            <li class="menu-item menu-item-has-children parent">
+                                <a title="My Account" href="">My Account({{ Auth::user()->name}})<i
+                                        class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="submenu curency">
+                                    <li class="menu-item">
+                                        <a title="Dashboard" href="#">Dashboard</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            @else
+                            <li class="menu-item"><a title="Register or Login" href="{{ route('login') }}">Login</a>
+                            </li>
+                            <li class="menu-item"><a title="Register or Login"
+                                    href="{{ route('register') }}">Register</a>
+                                @endauth
+                                @endif
                         </div>
                     </div>
                 </div>
