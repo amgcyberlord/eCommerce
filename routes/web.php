@@ -21,11 +21,20 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');
 
 Route::get('/', HomeComponet::class);
 Route::get('/shop', ShopComponent::class);
 Route::get('/cart', CartComponent::class);
 Route::get('/checkout', CheckoutComponent::class);
+
+//For Customers
+Route::middleware(['auth:sanctum', 'verified'])->group(function (){
+
+});
+
+//For Admin
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+});
